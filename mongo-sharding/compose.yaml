@@ -27,7 +27,7 @@ services:
       start_period: 10s
 
   shard_1:
-    image: mongo:latest
+    image: dh-mirror.gitverse.ru/mongo:latest
     container_name: shard_1
     restart: always
     ports:
@@ -52,7 +52,7 @@ services:
       start_period: 10s
 
   shard_2:
-    image: mongo:latest
+    image: dh-mirror.gitverse.ru/mongo:latest
     container_name: shard_2
     restart: always
     ports:
@@ -77,7 +77,7 @@ services:
       start_period: 10s
 
   mongos_router:
-    image: mongo:latest
+    image: dh-mirror.gitverse.ru/mongo:latest
     container_name: mongos_router
     restart: always
     ports:
